@@ -1,0 +1,32 @@
+[
+    {
+        "id": "0001",
+        "name": "Chauffe-eau RDC",
+        "type": "Chauffe-eau"
+    },
+    {
+        "id": "0002",
+        "name": "Tableau très basse tension",
+        "type": "TTBT"
+    },
+    {
+        "id": "0003",
+        "name": "Bureau Service employeur 2",
+        "type": "EMETTEUR"
+    },
+    {
+        "id": "0004",
+        "name": "Bureau",
+        "type": "VENTILO-CONVECTEUR"
+    },
+    {
+        "id": "0005",
+        "name": "Bureau BV5 PST",
+        "type": "EMETTEUR"
+    },
+    {
+        "id": "0006",
+        "name": "Serrure électrique",
+        "type": "CONTROLE D'ACCES"
+    }
+]
