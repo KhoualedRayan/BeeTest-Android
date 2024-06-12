@@ -1,12 +1,7 @@
 package com.beeldi.beetest.viewModels
 
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.setValue
-import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.ViewModel
-import com.beeldi.beetest.EquipmentDataSource
-import com.beeldi.beetest.others.Equipment
+import com.beeldi.beetest.tools.Equipment
 
 class EquipmentListViewModel() : ViewModel() {
     //Liste des équipements

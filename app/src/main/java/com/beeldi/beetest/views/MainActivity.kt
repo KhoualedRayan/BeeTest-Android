@@ -1,4 +1,4 @@
-package com.beeldi.beetest
+package com.beeldi.beetest.views
 
 import android.content.Context
 import android.os.Bundle
@@ -7,7 +7,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.beeldi.beetest.others.Equipment
+import com.beeldi.beetest.EquipmentDataSource
+import com.beeldi.beetest.R
+import com.beeldi.beetest.tools.Equipment
 import com.beeldi.beetest.recyclerViews.EquipmentAdaptator
 import com.beeldi.beetest.viewModels.EquipmentListViewModel
 import com.google.gson.Gson

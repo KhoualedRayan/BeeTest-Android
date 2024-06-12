@@ -1,12 +1,10 @@
 package com.beeldi.beetest.recyclerViews
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.beeldi.beetest.R
-import com.beeldi.beetest.others.Equipment
+import com.beeldi.beetest.tools.Equipment
 
 class EquipmentAdaptator(private val equipmentList: List<Equipment>) : RecyclerView.Adapter<EquipmentViewHolder>() {
 
@@ -23,5 +21,6 @@ class EquipmentAdaptator(private val equipmentList: List<Equipment>) : RecyclerV
 
     override fun onBindViewHolder(holder: EquipmentViewHolder, position: Int) {
         holder.setName(equipmentList.get(position).name)
+        holder.setEquipment(equipmentList.get(position))
     }
 }
