@@ -6,8 +6,10 @@
     android:layout_height="wrap_content">
 
     <FrameLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/frame_layout_border"
+        android:layout_margin="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -15,13 +17,34 @@
 
         <TextView
             android:id="@+id/equipmentTextView"
-            android:layout_width="match_parent"
+            android:layout_width="362dp"
             android:layout_height="wrap_content"
-            android:padding="16dp"
             android:layout_gravity="center_vertical|start"
             android:fontFamily="serif"
+            android:lineSpacingExtra="8sp"
+            android:padding="16dp"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textAlignment="viewStart"
+            android:textColor="@color/light_font"
             android:textSize="24sp"
+            android:textStyle="bold"
             tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/arrowImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:src="@android:drawable/ic_media_play"
+            android:contentDescription="@string/nextPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

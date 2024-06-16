@@ -27,7 +27,10 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shadow
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -87,26 +90,38 @@ class EquipmentDetails : ComponentActivity() {
             verticalArrangement = Arrangement.Center,
             modifier = modifier
                 .fillMaxSize()
-                .background(color = Color.Gray)
+                .background(color = Color.LightGray)
                 .offset(0.dp, (-100).dp)
         ) {
             Text(
                 text = "Equipment name :\n\n$name",
-                color = Color.Black,
+                color = Color.White,
                 fontSize = 30.sp,
                 textAlign = TextAlign.Center,
                 fontFamily = FontFamily.Monospace,
+                style = TextStyle(
+                    shadow = Shadow(
+                        color = Color(0,0,0,255),
+                        blurRadius = 8f
+                    )
+                ),
                 modifier = modifier
-                    .background(color = Color.White)
+                    .background(color = Color(33 ,150 ,243))
             )
             Text(
                 text = "Equipment type :\n\n$type",
-                color = Color.Black,
+                color = Color.White,
                 fontSize = 30.sp,
                 fontFamily = FontFamily.Monospace,
                 textAlign = TextAlign.Center,
+                style = TextStyle(
+                    shadow = Shadow(
+                        color = Color(0,0,0,255),
+                        blurRadius = 8f
+                    )
+                ),
                 modifier = modifier
-                    .background(color = Color.White)
+                    .background(color = Color(33 ,150 ,243))
             )
         }
 

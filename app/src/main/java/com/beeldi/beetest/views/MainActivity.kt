@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_layout)
         enableEdgeToEdge()
-        init(equipmentListViewModel, this)
+        equipmentListViewModel.init(this)
 
         //Mise en place de l'adapter
         adapter = EquipmentAdaptator(equipmentListViewModel.getEquipments())
@@ -35,12 +35,4 @@ class MainActivity : ComponentActivity() {
         recyclerView.adapter = adapter
 
     }
-}
-fun init(equipmentListViewModel: EquipmentListViewModel, context : Context){
-    //Fonction d'initialisation des équipements
-    val equipmentsData = EquipmentDataSource.getEquipmentData(context)
-    val gson = Gson()
-    val equipmentType = object : TypeToken<List<Equipment>>() {}.type
-    val equipmentsFromJson: List<Equipment> = gson.fromJson(equipmentsData,equipmentType)
-    equipmentListViewModel.addEquipments(equipmentsFromJson)
 }
